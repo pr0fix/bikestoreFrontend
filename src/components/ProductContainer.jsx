@@ -32,7 +32,7 @@ export default function Productcontainer() {
         { headerName: 'Price', field: 'price' },
         { headerName: 'Description', field: 'description' },
         { headerName: 'Color', field: 'color' },
-        { headerName: 'Year of manufacturing', field: 'manifacturingYear' }
+        { headerName: 'Year of manufacturing', field: 'manufacturingYear' }
     ];
 
     const defaultColDef = useMemo(() => ({
