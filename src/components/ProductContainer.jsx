@@ -28,17 +28,19 @@ export default function Productcontainer() {
     }
 
     const columns = [
-        { headerName: 'Product name', field: 'name' },
-        { headerName: 'Price', field: 'price' },
-        { headerName: 'Description', field: 'description' },
-        { headerName: 'Color', field: 'color' },
-        { headerName: 'Year of manufacturing', field: 'manufacturingYear' }
+        { headerName: 'Product name', field: 'name'},
+        { headerName: 'Price', field: 'price'},
+        { headerName: 'Description', field: 'description'},
+        { headerName: 'Color', field: 'color'},
+        { headerName: 'Year of manufacturing', field: 'manufacturingYear'}
     ];
 
     const defaultColDef = useMemo(() => ({
         resizable: true,
         flex: 1,
-        minWidth: 250
+        minWidth: 250,
+        filter: true,
+        sortable: true
     }));
 
     const gridOptions = {
